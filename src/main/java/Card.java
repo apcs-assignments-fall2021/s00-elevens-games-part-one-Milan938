@@ -12,30 +12,34 @@ public class Card {
 
 	// Constructor: Creates a new Card instance.
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
-		// YOUR CODE HERE
+		this.rank = cardRank;
+        this.suit = cardSuit;
+		this.pointValue = cardPointValue;
 	}
 
 	// Accesses this Card's rank.
 	public String getRank() {
-		// YOUR CODE HERE
-		return "";
+		String x = rank;
+		return x;
 	}
 
 	// Accesses this Card's suit.
 	public String getSuit() {
-		// YOUR CODE HERE
-		return "";
+		String x = suit;
+		return x;
 	}
 
 	// Accesses this Card's point value.
 	public int getPointValue() {
-		// YOUR CODE HERE
-		return -1;
+		int x = pointValue;
+		return x;
 	}
 
 	// Compare this card with another
 	public boolean equals(Card other) {
-		// YOUR CODE HERE
+		if(other.rank.equals(this.rank) && other.suit.equals(this.suit) && other.pointValue == this.pointValue){
+			return true;
+		}
 		return false;
 	}
 
@@ -43,8 +47,11 @@ public class Card {
 	//     "[Rank] of [Suit] (point value = [PointValue])".
 	//     e.g. "Queen of Spades (point value = 10);
 	public String toString() {
-		// YOUR CODE HERE
-		return "";
+		String x = suit;
+		String y = rank;
+		int q = pointValue;
+		String statement = y + " of " + x + " (point value = " + q + ")";
+		return statement;
 	}
 
 
